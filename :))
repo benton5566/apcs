@@ -1,0 +1,43 @@
+//輸入三個整數 a、b、c，印出此三數的最大值、最小值、總和及平均值。
+#include "stdio.h"
+
+int main()
+{
+ int a,b,c,max,min;
+ float sum,avg;
+ printf("enter a b c numbers\n");
+ scanf("%d %d %d",&a,&b,&c);
+ sum=a+b+c;
+ avg=sum/3;
+ if(a>b&&a>c)
+   {
+       max=a;
+   }else if(b>a&&b>c)
+   {
+       max=b;
+
+   }else if(c>a&&c>b)
+   {
+       max=c;
+   }
+
+ if(a<b&&a<c)
+   {
+       min=a;
+   }else if(b<a&&b<c)
+   {
+       min=b;
+   }else if(c<a&&c<b)
+   {
+       min=c;
+   }
+ printf("max=%d \n",max);
+ printf("min=%d \n",min);
+ printf("sum=%.1f \n",sum);
+ printf("avg=%.1f ",avg);
+
+
+return(0);
+
+}
+
